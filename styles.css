@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	height: 56px;
+	padding: 0px 16px;
+}
+
+.container {
+	display: flex;
+}
+
+.guide-button-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 40px;
+	padding: 8px;
+}
+
+.hamburger {
+	height: 24px;
+	width: 24px;
+}
+
+.country-code {
+	margin: 12px 0 0 -10px;
+	color: #606060;
+	font-size: 10px;
+	font-family: Roboto, Arial, sans-serif;
+}
+
+.logo {
+	display: flex;
+	height: 56px;
+	width: auto;
+}
+
+.logo-img {
+	height: 56px;
+}
+
+.user-d {
+	width: 225px;
+}
+
+.search-container {
+  	width: 728px;
+  	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container input {
+	height: 26px;
+    width: 526px;
+    padding: 2px 6px;
+    border: 1px solid #CCCCCC;
+    color: #f8f8f8;
+}
+
+.search-container button {
+	float: right;
+	height: 32px;
+	width: 65px;
+	padding: 1px 6px;
+	background: #f8f8f8;
+    border: 1px solid #CCCCCC;
+    border-left: 0px;
+	cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+.iconify {
+	height: 24px;
+	width: 24px;
+	color: #606060;
+}
+
+.search-btn {
+	height: 20px;
+	width: 20px;
+}
+
+.user-d {
+	display: flex;
+	width: 225px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.user-d button {
+	height: 40px;
+	width: 40px;
+	border: none;
+	background-color: #ffffff;
+}
+
+.user-icon {
+	height: 32px;
+	width: 32px;
+}

@@ -37,7 +37,6 @@ body {
 .logo {
 	display: flex;
 	height: 56px;
-	width: auto;
 }
 
 .logo-img {

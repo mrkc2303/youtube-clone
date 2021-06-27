@@ -145,3 +145,25 @@ body {
 		width: 24px;
 	}
 }
+
+.sidenav {
+	display: flex;
+	height: 100%;
+	width: 240px;
+	position: fixed;
+	z-index: 1;
+	top: 56px;
+	left: 0;
+	background-color: #ffffff;
+	padding-top: 20px;
+}
+
+.sidenav a {
+	height: 40px;
+	width: 240px;
+}
+
+a span {
+	width: 240px;
+	height: 40px;
+}

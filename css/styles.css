@@ -1,3 +1,5 @@
+/**********Header**********/
+
 body {
 	margin: 0;
 }
@@ -111,9 +113,11 @@ body {
 }
 
 .sticky {
-	position: fixed;
-	top: 0;
+	position: relative;
+	/*top: 0;*/
 	width: 100%;
+	overflow: hidden;
+    overflow-y: scroll;
 }
 
 #sidenav {
@@ -145,3 +149,6 @@ body {
 		width: 24px;
 	}
 }
+
+/**********MAIN BODY**********/
+

@@ -1,7 +1,31 @@
+/**********SCROLLBAR**********/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #606060; 
+  border-radius: 10px;
+  padding: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cccccc; 
+}
+
+
 /**********Header**********/
 
 body {
 	margin: 0;
+	scroll-padding-top: 56px;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 .header-container {
@@ -9,6 +33,7 @@ body {
 	justify-content: space-between;
 	height: 56px;
 	padding: 0px 16px;
+	overflow-x: hidden;
 }
 
 .container {
@@ -113,10 +138,10 @@ body {
 }
 
 .sticky {
-	position: relative;
-	/*top: 0;*/
+	position: fixed;
+	top: 0;
+  	left: 0;
 	width: 100%;
-	overflow: hidden;
     overflow-y: scroll;
 }
 

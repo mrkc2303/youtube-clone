@@ -145,36 +145,3 @@ body {
 		width: 24px;
 	}
 }
-
-/*.sidenav {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	max-width: 240px;
-	position: fixed;
-	z-index: 1;
-	top: 56px;
-	left: 0;
-	background-color: #ffffff;
-	padding-top: 20px;
-	justify-content: stretch;
-}
-
-.nav {
-	margin: 0px;
-	padding: 0px;
-}
-
-.nav li {
-	height: 40px;
-	width: 240px;
-	padding: 0px 24px;
-	font: 14px Roboto Noto sans-serif;
-	color: #030303;
-	justify-self: stretch;
-	list-style: none;
-}*/
-
-li:hover {
-	background-color: #f2f2f2;
-}

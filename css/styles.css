@@ -183,32 +183,6 @@ body {
   overflow-y: scroll;
 }
 
-
-@media only screen and (max-width: 655px) {
-	.search-container {
-		justify-content: flex-end;
-	}
-
-	.search-container input {
-		width: 0px;
-		padding: 0px;
-		background: #ffffff;
-	    border: none;
-	}
-
-	.search-container button {
-		height: 40px;
-		width: 40px;
-		border: none;
-		background-color: #ffffff;
-	}
-
-	.search-btn {
-		height: 24px;
-		width: 24px;
-	}
-}
-
 /**********MAIN BODY**********/
 
 .main-body {
@@ -256,6 +230,7 @@ body {
 
 .sidebar-category:hover {
 	background-color: #f2f2f2;
+	cursor: pointer;
 }
 
 .selected {
@@ -309,6 +284,23 @@ hr {
   color: #606060;
 }
 
+.sidebar-category-sml {
+	height: 44px;
+	width: 72px;
+	font: 10px Roboto, Noto, sans-serif;
+  color: #606060;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  display: grid;
+  justify-items: center;
+	align-items: center;
+}
+
+.sidebar-category-sml:hover {
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+
 /**********HEADER NAVBAR**********/
 
 .header-navbar {
@@ -335,6 +327,8 @@ hr {
 	font: 14px Roboto, Arial, sans-serif;
 	border: 1px solid #D9D9D9;
 	border-radius: 20px;
+	white-space: nowrap;
+	cursor: pointer;
 }
 
 .first {
@@ -345,3 +339,82 @@ hr {
 	background-color: #030303;
 	color: #ffffff;
 }
+
+/**********MAIN CONTENT**********/
+
+
+
+/**********RESPONSIVENESS CODE**********/
+
+@media only screen and (min-width: 1331px) {
+	.sidebar-category-sml {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1330px) {
+
+	.sidebar {
+		height: 100%;
+		width: 72px;
+	}
+
+	.sidebar:hover {
+		overflow-y: hidden;
+	}
+
+	.sidebar-categories , .sidebar-bottom-info , .subscription-categories , hr {
+		display: none;
+	}
+
+	.header-navbar {
+		left: 72px;
+	}
+
+	.user-icon {
+		padding: 0;
+		margin-bottom: 6px;
+	}
+
+	.sidebar-category-sml {
+		display: grid;
+	}
+}
+
+@media only screen and (max-width: 807px) {
+
+	.sidebar {
+		display: none;
+	}
+
+	.header-navbar {
+		left: 0;
+	}
+}
+
+@media only screen and (max-width: 655px) {
+
+	.search-container {
+		justify-content: flex-end;
+	}
+
+	.search-container input {
+		width: 0px;
+		padding: 0px;
+		background: #ffffff;
+	  border: none;
+	}
+
+	.search-container button {
+		height: 40px;
+		width: 40px;
+		border: none;
+		background-color: #ffffff;
+	}
+
+	.search-btn {
+		height: 24px;
+		width: 24px;
+	}
+}
+

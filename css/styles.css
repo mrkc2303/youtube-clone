@@ -345,6 +345,7 @@ hr {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	background-color: #fff;
 }
 
 .btm-nav div {

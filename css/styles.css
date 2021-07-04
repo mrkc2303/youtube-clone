@@ -306,7 +306,7 @@ hr {
 	left: 240px;
 	top: 56px;
   right: 0;
-  overflow-x: hidden;
+  overflow: hidden;
  	align-items: center;
  	justify-content: flex-start;
  	border-top: 1px solid #e5e5e5;

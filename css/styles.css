@@ -334,6 +334,34 @@ hr {
 	color: #ffffff;
 }
 
+/**********BOTTOM NAVBAR**********/
+
+.btm-nav {
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.btm-nav div {
+	font: 11px Roboto Arial sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	height: 100%;
+}
+
+.btm-btn {
+	background-color: #fff;
+	border: none;
+}
+
 /**********MAIN CONTENT**********/
 
 .main-content {
@@ -349,7 +377,7 @@ hr {
 /**********RESPONSIVENESS CODE**********/
 
 @media (min-width: 1331px) {
-	.sidebar-category-sml {
+	.sidebar-category-sml, .btm-nav {
 		display: none;
 	}
 }
@@ -365,7 +393,7 @@ hr {
 		overflow-y: hidden;
 	}
 
-	.sidebar-categories , .sidebar-bottom-info , .subscription-categories , hr {
+	.sidebar-categories , .sidebar-bottom-info , .subscription-categories , hr, .btm-nav {
 		display: none;
 	}
 
@@ -385,7 +413,7 @@ hr {
 
 @media (max-width: 807px) and (min-width: 656px){
 
-	.sidebar {
+	.sidebar, .btm-nav {
 		display: none;
 	}
 
@@ -396,7 +424,7 @@ hr {
 
 @media (max-width: 655px) {
 
-	.sidebar {
+	.sidebar, .btm-nav {
 		display: none;
 	}
 
@@ -453,5 +481,9 @@ hr {
 
 	.user-btn, .guide-button-box {
 		display: none;
+	}
+
+	.btm-nav {
+		display: flex;
 	}
 }

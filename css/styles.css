@@ -59,8 +59,7 @@
 body {
 	margin: 0;
 	scroll-padding-top: 56px;
-	overflow-x: hidden;
-	overflow-y: hidden;
+	overflow: hidden;
 }
 
 .header-container {
@@ -68,7 +67,7 @@ body {
 	justify-content: space-between;
 	height: 56px;
 	padding-right: 16px;
-	overflow-x: hidden;
+	overflow: hidden;
 	background-color: #fff;
 }
 
@@ -338,7 +337,7 @@ hr {
 .btm-nav {
 	height: 50px;
 	width: 100%;
-	margin-bottom: 15px;
+	padding-bottom: 10px;
 	position: fixed;	
 	bottom: 0;
 	left: 0;
@@ -346,6 +345,7 @@ hr {
 	align-items: center;
 	justify-content: center;
 	background-color: #fff;
+	overflow: none;
 }
 
 .btm-nav div {
@@ -528,6 +528,10 @@ hr {
 
 @media (max-width: 425px) {
 
+	body {
+		overflow: hidden;
+	}
+
 	.sidebar {
 		display: none;
 	}
@@ -558,6 +562,7 @@ hr {
 
 	.btm-nav {
 		display: flex;
+		z-index: 1;
 	}
 
 	.videos-container {

@@ -54,19 +54,23 @@
   background: #cccccc; 
 }
 
-/**********Header**********/
 
 body {
 	margin: 0;
+	padding: 0;
 	scroll-padding-top: 56px;
 	overflow: hidden;
+	background-color: #fff;
 }
+
+
+/**********Header**********/
 
 .header-container {
 	display: flex;
 	justify-content: space-between;
 	height: 56px;
-	padding-right: 16px;
+	/*margin-right: 10px;*/
 	overflow: hidden;
 	background-color: #fff;
 }
@@ -179,7 +183,6 @@ body {
 	top: 0;
   left: 0;
 	width: 100%;
-  overflow-y: scroll;
 }
 
 /**********SIDE BAR**********/
@@ -337,7 +340,7 @@ hr {
 .btm-nav {
 	height: 50px;
 	width: 100%;
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
 	position: fixed;	
 	bottom: 0;
 	left: 0;
@@ -379,7 +382,7 @@ hr {
 
 .videos {
 	background-color: #f9f9f9;
-	padding: 15px 25px;
+	padding: 15px 25px 50px 25px;
 }
 
 .videos-container {
@@ -527,10 +530,6 @@ hr {
 }
 
 @media (max-width: 425px) {
-
-	body {
-		overflow: hidden;
-	}
 
 	.sidebar {
 		display: none;

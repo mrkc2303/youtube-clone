@@ -27,7 +27,8 @@ var sidebarImg = sidebar.getElementsByClassName("sidebar-category-sml");
 for (var i = 0; i < sidebarImg.length; i++) {
     sidebarImg[i].addEventListener("click", function() {
         var current = document.getElementsByClassName("selected-img");
-        current[0].className = current[0].className.replace(" selected-img", "");
+        console.log(current);
+        current[0].className = current[0].className.replace(" active", "");
         this.className += " selected-img";
     });
 }

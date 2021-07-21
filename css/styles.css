@@ -116,6 +116,7 @@ body {
 .search-container {
   min-width: 40px;
   max-width: 728px;
+  color: #f8f8f8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,8 +128,12 @@ body {
   width: 526px;
   padding: 2px 6px;
   border: 1px solid #CCCCCC;
-  color: #f8f8f8;
+  color: #000000;
   font: 13px Roboto, Noto, sans-serif;
+}
+
+.search-container input:focus {
+	outline: 0;
 }
 
 .search-container button {

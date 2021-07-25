@@ -22,13 +22,18 @@ for (var i = 0; i < sidebarCategory.length; i++) {
     });
 }
 
-var sidebarImg = sidebar.getElementsByClassName("sidebar-category-sml");
+// var sidebarImg = sidebar.getElementsByClassName("sidebar-category-sml");
 
-for (var i = 0; i < sidebarImg.length; i++) {
-    sidebarImg[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("selected-img");
-        console.log(current);
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " selected-img";
-    });
-}
+// for (var i = 0; i < sidebarImg.length; i++) {
+//     sidebarImg[i].addEventListener("click", function() {
+//         var current = document.getElementsByClassName("selected-img");
+//         console.log(current);
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className += " selected-img";
+//     });
+// }
+
+var hamburgerBtnBox = document.querySelector(".guide-button-box");
+hamburgerBtnBox.addEventListener("click", function() {
+    sidebarCategory.style.display = 'none';
+});

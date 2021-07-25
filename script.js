@@ -34,6 +34,8 @@ for (var i = 0; i < sidebarCategory.length; i++) {
 // }
 
 var hamburgerBtnBox = document.querySelector(".guide-button-box");
+var smlItems = document.querySelector(".sidebar-category-sml");
 hamburgerBtnBox.addEventListener("click", function() {
-    sidebarCategory.style.display = 'none';
+    sidebar.style.display = "none";
+    sidebar
 });

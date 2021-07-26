@@ -293,7 +293,7 @@ hr {
   color: #606060;
   padding-top: 16px;
   padding-bottom: 14px;
-  display: flex;
+  display: grid;
   justify-items: center;
 	align-items: center;
 }
@@ -459,7 +459,7 @@ hr {
 /**********RESPONSIVENESS CODE**********/
 
 @media (min-width: 1331px) {
-	.sidebar-category-sml, .btm-nav {
+	.sidebar-categories-sml, .btm-nav {
 		display: none;
 	}
 }
@@ -488,7 +488,7 @@ hr {
 		margin-bottom: 6px;
 	}
 
-	.sidebar-category-sml {
+	.sidebar-categories-sml {
 		display: grid;
 	}
 }

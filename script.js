@@ -1,3 +1,4 @@
+
 var header = document.querySelector(".header-navbar");
 var ctg = header.getElementsByClassName("navbar-element");
 
@@ -12,6 +13,8 @@ for (var i = 0; i < ctg.length; i++) {
 
 var sidebar = document.querySelector(".sidebar");
 var sidebarCategory = sidebar.getElementsByClassName("sidebar-category");
+var sidebarCategories = sidebar.getElementsByClassName("sidebar-categories");
+var subscriptionCategories = sidebar.getElementsByClassName("subscription-categories");
 
 for (var i = 0; i < sidebarCategory.length; i++) {
     sidebarCategory[i].addEventListener("click", function() {
@@ -34,8 +37,33 @@ for (var i = 0; i < sidebarCategory.length; i++) {
 // }
 
 var hamburgerBtnBox = document.querySelector(".guide-button-box");
-var smlItems = document.querySelector(".sidebar-category-sml");
-hamburgerBtnBox.addEventListener("click", function() {
-    sidebar.style.display = "none";
-    sidebar
-});
+var sidebarSmlItems = document.querySelector(".sidebar-category-sml");
+var hr = document.querySelectorAll("hr");
+var sidebarCategoriesSml = document.querySelector(".sidebar-categories-sml");
+
+var screenWidth = window.screen.width * window.devicePixelRatio;
+
+hamburgerBtnBox.addEventListener("click", open);
+
+function open() {
+    if(screenWidth > 1331){
+        for (var i = 0; i < sidebarCategories.length; i++) {
+            sidebarCategories[i].style.display = "none";
+        }
+
+        for (var i = 0; i < subscriptionCategories.length; i++) {
+            subscriptionCategories[i].style.display = "none";
+        }
+
+        for (var i = 0; i < hr.length; i++){
+            hr[i].style.display = "none";
+        }  
+
+        document.querySelector(".sidebar-bottom-info").style.display = "none";
+        document.querySelector(".subscription-categories").style.display = "none";           
+        sidebarCategoriesSml.style.display = "grid";
+        sidebar.style.overflow = "hidden";
+        sidebar.style.width = "72px";
+        sidebar.style.height = "100%"
+    }
+}

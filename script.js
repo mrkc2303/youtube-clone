@@ -67,3 +67,12 @@ function open() {
         sidebar.style.height = "100%"
     }
 }
+
+var nextBtn = document.querySelector(".next-btn");
+console.log(nextBtn);
+
+nextBtn.addEventListener("click", scrollRight);
+
+function scrollRight() {
+    header.scrollBy(200, 0);
+}

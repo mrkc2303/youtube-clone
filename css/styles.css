@@ -61,6 +61,8 @@ body {
 	scroll-padding-top: 56px;
 	overflow: hidden;
 	background-color: #fff;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 10pxs;
 }
 
 
@@ -176,6 +178,7 @@ body {
 	width: 40px;
 	border: none;
 	background-color: #ffffff;
+	cursor: pointer;
 }
 
 .user {
@@ -313,7 +316,7 @@ hr {
 	position: fixed;
 	left: 240px;
 	top: 56px;
-  overflow: hidden;
+  /*overflow: hidden;*/
  	align-items: center;
  	justify-content: flex-start;
  	border-top: 1px solid #e5e5e5;
@@ -339,6 +342,32 @@ hr {
 .active {
 	background-color: #030303;
 	color: #ffffff;
+}
+
+.next-container {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  right: 0;
+	height: 54px;
+	width: 108px;
+	display: flex;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 90%);
+}
+
+.next-btn {
+	height: 32px;
+	width: 108px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 8px;
+	cursor: pointer;
+}
+
+.next-btn .iconify {
+	height: 16px;
+	width: 16px;
 }
 
 /**********BOTTOM NAVBAR**********/
@@ -382,6 +411,7 @@ hr {
 	top: 88px;
 	right: 0;
 	width: auto;
+	max-width: 2200px;
 	height: 100%;
 	overflow-y: scroll;
 }
@@ -413,6 +443,7 @@ hr {
 }
 
 .video-thumbnail {
+	position: relative;
 	width: 100%;
 	height: auto;
 }
@@ -454,6 +485,25 @@ hr {
 	text-decoration: none;
 	color: rgb(96, 96, 96);
 	font: inherit;
+}
+
+.overlay-time {
+	position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 18px;
+  margin: 4px 4px 8px 4px;
+  padding: 3px 4px;
+  background: #000000;
+}
+
+.overlay-text{
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.8rem;
+	font-family: Roboto, Arial, sans-serif;
+	max-height: 1.2rem;
+  overflow: hidden;
 }
 
 /**********RESPONSIVENESS CODE**********/

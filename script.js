@@ -76,3 +76,5 @@ nextBtn.addEventListener("click", scrollRight);
 function scrollRight() {
     header.scrollBy(200, 0);
 }
+
+//VIDEO

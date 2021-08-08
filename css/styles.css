@@ -194,6 +194,11 @@ body {
 	width: 100%;
 }
 
+.user-btn .iconify {
+	height: 22px;
+	width: 22px;
+}
+ 
 /**********SIDE BAR**********/
  
 .sidebar {
@@ -505,6 +510,25 @@ hr {
 	max-height: 1.2rem;
   overflow: hidden;
 }
+
+/********************VIDEO HTML STYLES********************/
+
+/**********MAIN CONTENT**********/
+
+.main-content-video {
+	background-color: #F9F9F9;
+	position: -webkit-fixed;
+	position: fixed;
+	left: 0;
+	top: 56px;
+	right: 0;
+	width: auto;
+	height: 100%;
+	overflow-y: scroll;
+	display: grid;
+	
+}
+
 
 /**********RESPONSIVENESS CODE**********/
 

@@ -46,7 +46,7 @@ var screenWidth = window.screen.width * window.devicePixelRatio;
 hamburgerBtnBox.addEventListener("click", open);
 
 function open() {
-    if(screenWidth >= 1320) {
+    if(screenWidth >= 1330) {
         sidebar.classList.toggle("show-sidebar-sml");
     }
 }

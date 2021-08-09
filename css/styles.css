@@ -65,6 +65,10 @@ body {
 	font-size: 10pxs;
 }
 
+a {
+	text-decoration: none;
+}
+
 
 /**********Header**********/
 
@@ -101,11 +105,13 @@ body {
 	color: #606060;
 	font-size: 10px;
 	font-family: Roboto, Arial, sans-serif;
+	text-decoration-line: none;
 }
 
 .logo {
 	display: flex;
 	height: 56px;
+	cursor: pointer;
 }
 
 .logo-img {
@@ -438,6 +444,7 @@ hr {
 	margin-top: 12px;
 	padding-bottom: 100px;
 	grid-row-gap: 10px;
+	grid-column-gap: 5px;
 }
 
 .video {
@@ -468,7 +475,7 @@ hr {
 
 .video-details {
 	display: flex;
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	padding-right: 24px;
 	font: 14px Roboto, Arial, sans-serif;
 	color: rgb(96, 96, 96);
@@ -531,6 +538,12 @@ hr {
 
 
 /**********RESPONSIVENESS CODE**********/
+
+@media (min-width: 1900px) {
+	.next-container {
+		display: none;
+	}
+}
 
 @media (min-width: 1331px) {
 	.sidebar-categories-sml, .btm-nav {

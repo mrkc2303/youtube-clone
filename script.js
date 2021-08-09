@@ -46,27 +46,12 @@ var screenWidth = window.screen.width * window.devicePixelRatio;
 hamburgerBtnBox.addEventListener("click", open);
 
 function open() {
-    if(screenWidth > 1331){
-        for (var i = 0; i < sidebarCategories.length; i++) {
-            sidebarCategories[i].style.display = "none";
-        }
-
-        for (var i = 0; i < subscriptionCategories.length; i++) {
-            subscriptionCategories[i].style.display = "none";
-        }
-
-        for (var i = 0; i < hr.length; i++){
-            hr[i].style.display = "none";
-        }  
-
-        document.querySelector(".sidebar-bottom-info").style.display = "none";
-        document.querySelector(".subscription-categories").style.display = "none";           
-        sidebarCategoriesSml.style.display = "grid";
-        sidebar.style.overflow = "hidden";
-        sidebar.style.width = "72px";
-        sidebar.style.height = "100%"
+    if(screenWidth >= 1320) {
+        sidebar.classList.toggle("show-sidebar-sml");
     }
 }
+
+//SCROLLING NEXT
 
 var nextBtn = document.querySelector(".next-btn");
 console.log(nextBtn);

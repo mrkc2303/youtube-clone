@@ -218,6 +218,10 @@ a {
   overflow-y: hidden;
 }
 
+.show-sidebar {
+	display: block;
+}
+
 .sidebar:hover {
 	overflow-y: scroll;
 }

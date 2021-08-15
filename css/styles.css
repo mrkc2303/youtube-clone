@@ -321,6 +321,19 @@ hr {
 	cursor: pointer;
 }
 
+.hidden-categories {
+	display: none;
+	padding: 0px;
+}
+
+.show-less-icon {
+	display: none;
+}
+
+.show-more-icon {
+	display: block;
+}
+
 /**********HEADER NAVBAR**********/
 
 .header-navbar {
@@ -540,6 +553,43 @@ hr {
 	
 }
 
+/********************404 PAGE********************/
+
+.body404 {
+	background-color: #F1F1F1;
+}
+
+.div404 {
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	margin-top: 100px;
+}
+
+.div404 img {
+	margin-bottom: 14px;
+}
+
+.content404 {
+	text-align: center;
+	font-size: 16px;
+	font-family: Roboto, Arial, sans-serif;
+	line-height: 26px;
+	font-weight: 400;
+	margin: auto;
+	text-shadow: 0 0 0 transparent, 0 1px 1px #fff;
+}
+
+.logo-img-404 {
+	height: auto;
+	width: auto;
+	max-width: 125px;
+	max-height: 30px;
+}
 
 /**********RESPONSIVENESS CODE**********/
 

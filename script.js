@@ -15,13 +15,39 @@ var sidebar = document.querySelector(".sidebar");
 var sidebarCategory = sidebar.getElementsByClassName("sidebar-category");
 var sidebarCategories = sidebar.getElementsByClassName("sidebar-categories");
 var subscriptionCategories = sidebar.getElementsByClassName("subscription-categories");
+var sidebarHiddenCategories = sidebar.getElementsByClassName("hidden-categories");
+var showMoreText = sidebar.querySelector(".showmore-text");
+var showMoreIcon = sidebar.querySelector(".show-more-icon");
+var showLessIcon = sidebar.querySelector(".show-less-icon");
+sidebarHiddenCategories[0].style.display = "none";
 
 for (var i = 0; i < sidebarCategory.length; i++) {
     sidebarCategory[i].addEventListener("click", function() {
-        var current1 = document.getElementsByClassName("selected");
-        current1[0].className = current1[0].className.replace(" selected", "");
-        // current2[0].className = current2[0].className.replace(" selected-img", "");
-        this.className += " selected";      
+        if(this === sidebar.getElementsByClassName("showmore")[0]) {
+            if (sidebarHiddenCategories[0].style.display === "none"){
+                sidebarHiddenCategories[0].style.display = "flex";
+                showMoreText.innerHTML = "Show Less";
+                showMoreIcon.style.display = "none";
+                showLessIcon.style.display = "block";
+            }
+            else {
+                sidebarHiddenCategories[0].style.display = "none";
+                showMoreText.innerHTML = "Show More";
+                showMoreIcon.style.display = "block";
+                showLessIcon.style.display = "none";
+            }
+        }
+        else { 
+            var current1 = document.getElementsByClassName("selected");
+            // console.log(current1);
+            // var current2 = document.getElementsByClassName("selected-img");
+            // console.log(current2);
+            current1[0].className = current1[0].className.replace(" selected", "");
+            // current2[0].className = current2[0].className.replace(" selected-img", "");
+            this.className += " selected";    
+
+            console.log(this);
+        }
     });
 }
 
@@ -54,7 +80,7 @@ function open() {
 //SCROLLING NEXT
 
 var nextBtn = document.querySelector(".next-btn");
-console.log(nextBtn);
+// console.log(nextBtn);
 
 nextBtn.addEventListener("click", scrollRight);
 
